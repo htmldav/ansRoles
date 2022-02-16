@@ -1,0 +1,6 @@
+---
+# tasks file for jdk
+- name: Ensure java is present
+  apt:
+   name: default-jdk
+   state: present

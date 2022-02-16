@@ -1,0 +1,16 @@
+- name: assembly server conf
+  hosts: assembly
+  become: yes
+
+  roles:
+   - jdk
+   - assemb
+   
+
+- name: prod server conf
+  hosts: prod
+  become: yes
+
+  roles:
+   - jdk
+   - production

@@ -1,12 +1,12 @@
 ---
 # tasks file for production
-- name: Copy war file from assembly  to prod 
-  synchronize:
-    src: /home/aldav/repos/target/hello-1.0.war
-    dest: /var/lib/tomcat9/webapps
-  delegate_to: 84.201.164.185
-
 - name: Ensure tomcat is present
   apt:
     name: tomcat9
     state: present
+
+- name: Copy war file from assembly  to prod
+  synchronize:
+    src: /home/aldav/repos/target/hello-1.0.war
+    dest: /var/lib/tomcat9/webapps
+  delegate_to: 62.84.123.150

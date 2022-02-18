@@ -1,2 +1,6 @@
 ---
 # defaults file for production
+artefact_dest: /var/lib/tomcat9/webapps
+artefact_host: 51.250.27.45
+artefact_src: /home/aldav/repos/target
+artefact: hello-1.0.war

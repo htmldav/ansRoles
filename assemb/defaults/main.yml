@@ -1,2 +1,6 @@
 ---
 # defaults file for assemb
+git_repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello
+home_repos: /home/aldav/repos 
+ 
+
